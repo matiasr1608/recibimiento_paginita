@@ -77,6 +77,12 @@ window.addEventListener("load", async () => {
 
     setTimeout(()=>{
       $("#gif_inicial").hide(700)
+      $("#gif_inicial2").show(600)
+      $("#gif_inicial3").show(600)
+      $("#gif_inicial4").show(600)
+      $("#gif_inicial5").show(600)
+
+
 
       $("#info").show()
 
