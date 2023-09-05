@@ -66,13 +66,30 @@ window.addEventListener("load", async () => {
 
 
 
-
   $("#play_btn").on("click", () => {
     audio.play()
     console.log("hola")
     $(".segundo").hide()
     $("body").addClass("black")
     $("#canvas").show()
+
+    $("#gif_inicial").show(600)
+
+    setTimeout(()=>{
+      $("#gif_inicial").hide(700)
+
+      $("#info").show()
+
+      const myEvent = new CustomEvent("myevent", {
+        detail: {},
+        bubbles: true,
+        cancelable: true,
+        composed: false,
+      });
+      window.dispatchEvent(myEvent);
+    
+
+    },10000)
 
   })
 })

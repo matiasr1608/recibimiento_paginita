@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,119 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 
     <link rel="stylesheet" href="index3.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <script src="index2.js"></script>
     <script src="index_text.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!-- <p id="offscreen-text" class="offscreen-text"></p> -->
- 
-     <!-- <svg id="svg"> </svg> -->
-     <canvas id="canvas" style="display:none"></canvas>
 
-    <div class="fill container-fluid p-0 w-100 ">
-        <div class="row h-100 w-100 m-0">
-            <div class="col-12 text-center textt align-self-center p-5" >
+    <!-- <svg id="svg"> </svg> -->
+    <canvas id="canvas" style="display:none"></canvas>
+
+    <div class="fill container-fluid p-0 w-100">
+        <div class="row h-100 w-100 m-0 justify-content-center text-center">
+            <div class="col-12 text-center textt align-self-center p-5 segundo">
                 <p id="text2" class="segundo"></p>
+                <p id="text3" class="segundo"></p>
                 <br>
-                <p id="text3"class="segundo"></p>
-                <br>
-               <img id="play_btn" class="play_btn segundo" src="img/2047167_25e21.gif" alt="">
-    
+                <img id="play_btn" class="play_btn segundo" src="img/2047167_25e21.gif" alt="">
+
+            </div>
+            <div id="gif_inicial" style="display: none;">
+                <img class="position-absolute top-50 start-50 translate-middle" src="/img/macarena.gif" alt="">
+
+            </div>
+            <!-- <div id="gif_inicial" class="col-10 mt-5 align-self-center text-center"> -->
+            <div id="info_div" class="col-10 mt-5 text-center">
+                
+                <div id="info" class="p-3" style="background-color: rgba(0, 0, 0, 0.3);display:none;">
+                    <h1 class="mt-5 blanco">AHORA LA INFORMACIÓN REAL 100% NADA FAKE NADA DE FAKE NEWS</h1>
+                    <hr class="border border-white border-2 ">
+                    <H2 class="blanco">DÓNDE?</H2>
+                    <p class="font-monospace blanco">En el salón 5 del Centro Comercial de Canelones (Frente al politema) <a href="https://goo.gl/maps/xCXawzh4tma5i8mK8">mapa</a></p>
+                    <hr>
+                    <h2 class="blanco">A QUÉ HORA?</h2>
+                    <p class="font-monospace blanco">A las 22hs</p>
+                    <hr>
+                    <h2 class="blanco">HAY TEMÁTICA? OBVIO QUE HAY TEMÁTICA, ACASO NO ME CONOCÉS? SI PENSANTE QUE NO HABÍA TEMÁTICA
+                        ESTÁS DESINVITADE</h2>
+                    <p class="font-monospace blanco">La temática esssssss (ruido de tamboresssssss):</p>
+                    <p class="font-monospace blanco">Me equivoqué de lugar, osea andá vestide de cualquier cosa menos de gala ni de fiesta.</p>
+                    <p class="font-monospace blanco">Pd: No vale ir común</p>
+                    <hr>
+                    <h3 class="blanco">CONFIRMAR ASISTENCIA ANTES DEL 12/9 EN EL FORMULARIO DE ABAJO:</h3>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        acá
+                    </button>
+                    <hr>
+                    <h3 class="blanco">Para los que vienen de mvd, les dejo unos tips:</h3>
+                    <p class="blanco">Los bondis salen de la terminal Rio Branco</p>
+                    <p class="blanco">Pueden venir en un directo e irse en un común (o quedarse en casa y el domingo irse en un directo)</p>
+                    <p class="blanco">Para la ida el último directo sale 20:45, también hay un común de copsa 21:00 (el directo demora 50 min y el común 1:30hs.)</p>
+                    <p class="blanco">Para la vuelta, tienen comunes a las 3:50,3:40,6:42. Y también directos de día por si se quedan.</p>
+                    <p class="blanco">Me pueden hablar y les explico bien el tema de los viajes.</p>
+
+                    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep0Bm_gFcSplVyCUKr9FpET9EdZABsBqkWS8PtikdzgIoNBg/viewform?embedded=true" width="640" height="916" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> -->
+
+                    <!-- <div class="row justify-content-md-center">
+                        <div class="col-12">
+                            <div id="form" class="position-absolute top-50 start-50 translate-middle">
+                                <iframe  src="https://fm.addxt.com/form/?vf=1FAIpQLSep0Bm_gFcSplVyCUKr9FpET9EdZABsBqkWS8PtikdzgIoNBg" width="350" height="1240" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                </div>
             </div>
 
+
         </div>
-        
-        
+
+
     </div>
 
 
-<!-- <input type="text" class="input", id="input" /> -->
+    <!-- <input type="text" class="input", id="input" /> -->
 
-</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Llena el formulariooo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 100%">
+                        <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSep0Bm_gFcSplVyCUKr9FpET9EdZABsBqkWS8PtikdzgIoNBg/viewform?embedded=true"
+                        frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%"></iframe>
+                    </div>
+                    
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

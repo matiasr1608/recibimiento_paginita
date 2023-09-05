@@ -10,6 +10,12 @@ window.addEventListener("load", (event) => {
 
 })
 
+window.addEventListener("myevent",()=>{
+    handleResize();
+
+
+  })
+
 
 let w
 let midX
@@ -25,8 +31,12 @@ const Tau = Math.PI * 2,
     Mrandom = Math.random;
 
 function handleResize() {
-    w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    // w = ctx.canvas.width = window.innerWidth;
+    w = ctx.canvas.width = $(document).width();
+
+    // h = ctx.canvas.height = window.innerHeight;
+    h = ctx.canvas.height = $(document).height();
+
     midX = w * .5;
 }
 window.onresize = () => handleResize();
@@ -120,6 +130,7 @@ function animate() {
     draw();
     requestAnimationFrame(animate);
 }
+
 
 // ////////////////////////////
 

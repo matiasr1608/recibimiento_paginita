@@ -14,6 +14,24 @@ canvas{
   font-family: 'Rubik Mono One', sans-serif;
 
 }
+/* #form{
+  position:absolute;
+  z-index: 3;
+} */
+#info_div{
+  position: absolute;
+  z-index: 2;
+  /* transition: 2s; */
+}
+.blanco{
+  color: #fafafa;
+  opacity: 100%;
+  /* font-family: 'Rubik Mono One', sans-serif; */
+}
+/* .container-fluid{
+  z-index: 2;
+  position: absolute;
+} */
 
 body{
   height: 100vh;
