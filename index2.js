@@ -25,7 +25,7 @@ let particles = [];
 
 const Tau = Math.PI * 2,
     ConnectionDist = 50,
-    maxParticles = 500,
+    maxParticles = 350,
     radius = 3,
     Msqrt = Math.sqrt,
     Mrandom = Math.random;
